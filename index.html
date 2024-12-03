@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta name="description" content="The chase game. Run from the enemy and collect points, simple!">
+    <link rel=stylesheet href="styles/styles.css">
+    <title>Chase</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+
+    <div class="game-title">
+      Get points, don't let red catch you!
+    </div>
+
+    <div class="game-container">
+      <!-- <button onclick="startGame()">Start Game</button> -->
+      <canvas id="mainCanvas" width="600" height="400"></canvas>
+
+      <div class="modal">
+        <button onclick="startGame()">Start Game</button>
+        <div class="wellDone">
+          New high score!
+        </div>
+      </div>
+    </div>
+    <audio id="soundtrack" src="sounds/soundtrack.mp3"></audio>
+    <audio id="playerCollect" src="sounds/playerCollect.mp3"></audio>
+    <audio id="playerHit" src="sounds/playerHit.mp3"></audio>
+    <script src="js/main.js"></script>
+  </body>
+</html>
